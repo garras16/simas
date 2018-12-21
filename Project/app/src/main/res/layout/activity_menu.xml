@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A8C0FF"
+    tools:context=".MenuActivity">
+
+    <ImageButton
+        android:id="@+id/btn_logout"
+        android:layout_width="119dp"
+        android:layout_height="118dp"
+        android:layout_alignBottom="@+id/list_barang"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toEndOf="@id/list_barang"
+        android:layout_toRightOf="@+id/list_barang"
+        android:background="#A8C0FF"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/logout" />
+
+    <TextView
+        android:id="@+id/txt_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="218dp"
+        android:text="Username"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/scan_masuk"
+        android:layout_width="122dp"
+        android:layout_height="128dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="300dp"
+        android:onClick="Masuk"
+        app:srcCompat="@drawable/barangmasuk" />
+
+    <ImageView
+        android:id="@+id/scan_keluar"
+        android:layout_width="80dp"
+        android:layout_height="118dp"
+        android:layout_alignBottom="@+id/scan_masuk"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@id/scan_masuk"
+        android:onClick="Keluar"
+        app:srcCompat="@drawable/barangkeluar" />
+
+    <ImageView
+        android:id="@+id/list_barang"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/scan_masuk"
+        android:layout_alignStart="@+id/scan_masuk"
+        android:onClick="List"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/listbarang" />
+
+    <TextView
+        android:id="@+id/txt_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_username"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="242dp"
+        android:text="ID"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="106dp"
+        app:srcCompat="@drawable/simas" />
+
+</RelativeLayout>
